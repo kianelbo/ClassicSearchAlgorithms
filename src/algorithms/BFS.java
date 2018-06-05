@@ -30,36 +30,34 @@ public class BFS extends BaseAlgorithm {
 
             BaseState s = queue.remove();
             if (problem.goalTest(s)) {
-
                 solution = s.actionSeq;
                 return true;
-            } else {
-                expanded.add(s);
-                for (Action a : problem.getActions(s)) {
-                    BaseState targetState = problem.results(s, a);
-                    boolean adding = true;
-                    if (isGraphSearch)
-                        for (BaseState cs : expanded)
-                            if (cs.isEqual(targetState)) {
-                                adding = false;
-                                break;
-                            }
-                    for (BaseState nextState : queue)
-                        if (nextState.isEqual(targetState)) {
+            }
+            expanded.add(s);
+            for (Action a : problem.getActions(s)) {
+                BaseState targetState = problem.results(s, a);
+                boolean adding = true;
+                if (isGraphSearch)
+                    for (BaseState cs : expanded)
+                        if (cs.isEqual(targetState)) {
                             adding = false;
                             break;
                         }
-
-                    if (adding) {
-                        visited++;
-                        ArrayList<Action> previousActs = new ArrayList<>(s.actionSeq);
-                        previousActs.add(a);
-
-                        targetState.actionSeq = previousActs;
-                        queue.add(targetState);
+                for (BaseState nextState : queue)
+                    if (nextState.isEqual(targetState)) {
+                        adding = false;
+                        break;
                     }
 
+                if (adding) {
+                    visited++;
+                    ArrayList<Action> previousActs = new ArrayList<>(s.actionSeq);
+                    previousActs.add(a);
+
+                    targetState.actionSeq = previousActs;
+                    queue.add(targetState);
                 }
+
             }
         }
 

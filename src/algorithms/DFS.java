@@ -46,34 +46,33 @@ public class DFS extends BaseAlgorithm {
             if (problem.goalTest(s)) {
                 solution = s.actionSeq;
                 return true;
-            } else {
-                expanded.add(s);
+            }
+            expanded.add(s);
 
-                if (limit != -1 && s.actionSeq.size() >= limit) continue;
+            if (limit != -1 && s.actionSeq.size() >= limit) continue;
 
-                for (Action a : problem.getActions(s)) {
-                    BaseState targetState = problem.results(s, a);
-                    boolean adding = true;
-                    if (isGraphSearch) for (BaseState cs : expanded)
-                        if (cs.isEqual(targetState)) {
-                            adding = false;
-                            break;
-                        }
-                    for (BaseState nextState : stack)
-                        if (nextState.isEqual(targetState)) {
-                            adding = false;
-                            break;
-                        }
-                    if (adding) {
-                        visited++;
-                        ArrayList<Action> previousActs = new ArrayList<>(s.actionSeq);
-                        previousActs.add(a);
-
-                        targetState.actionSeq = previousActs;
-                        stack.push(targetState);
+            for (Action a : problem.getActions(s)) {
+                BaseState targetState = problem.results(s, a);
+                boolean adding = true;
+                if (isGraphSearch) for (BaseState cs : expanded)
+                    if (cs.isEqual(targetState)) {
+                        adding = false;
+                        break;
                     }
+                for (BaseState nextState : stack)
+                    if (nextState.isEqual(targetState)) {
+                        adding = false;
+                        break;
+                    }
+                if (adding) {
+                    visited++;
+                    ArrayList<Action> previousActs = new ArrayList<>(s.actionSeq);
+                    previousActs.add(a);
 
+                    targetState.actionSeq = previousActs;
+                    stack.push(targetState);
                 }
+
             }
         }
         return false;

@@ -30,37 +30,37 @@ public class AStar extends BaseAlgorithm {
             if (problem.goalTest(s)) {
                 solution = s.actionSeq;
                 return true;
-            } else {
-                expanded.add(s);
-                for (Action a : problem.getActions(s)) {
-                    BaseState targetState = problem.results(s, a);
-                    boolean adding = true;
-                    if (isGraphSearch)
-                        for (BaseState cs : expanded)
-                            if (cs.isEqual(targetState)) {
-                                adding = false;
-                                break;
-                            }
-                    for (BaseState nextState : queue)
-                        if (nextState.isEqual(targetState)) {
-                            if (s.currentCost + a.cost + targetState.getHeuristic() < nextState.currentCost)
-                                nextState.currentCost = s.currentCost + a.cost + targetState.getHeuristic();
+            }
+            expanded.add(s);
+            for (Action a : problem.getActions(s)) {
+                BaseState targetState = problem.results(s, a);
+                boolean adding = true;
+                if (isGraphSearch)
+                    for (BaseState cs : expanded)
+                        if (cs.isEqual(targetState)) {
                             adding = false;
                             break;
                         }
-
-                    if (adding) {
-                        visited++;
-                        ArrayList<Action> previousActs = new ArrayList<>(s.actionSeq);
-                        previousActs.add(a);
-
-                        targetState.actionSeq = previousActs;
-                        targetState.currentCost += a.cost - targetState.getHeuristic();
-                        queue.add(targetState);
+                for (BaseState nextState : queue)
+                    if (nextState.isEqual(targetState)) {
+                        if (s.currentCost + a.cost + targetState.getHeuristic() < nextState.currentCost)
+                            nextState.currentCost = s.currentCost + a.cost + targetState.getHeuristic();
+                        adding = false;
+                        break;
                     }
 
+                if (adding) {
+                    visited++;
+                    ArrayList<Action> previousActs = new ArrayList<>(s.actionSeq);
+                    previousActs.add(a);
+
+                    targetState.actionSeq = previousActs;
+                    targetState.currentCost += a.cost - targetState.getHeuristic();
+                    queue.add(targetState);
                 }
+
             }
+
         }
         return false;
     }

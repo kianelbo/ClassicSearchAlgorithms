@@ -31,34 +31,34 @@ public class UCS extends BaseAlgorithm {
                 solution = s.actionSeq;
                 return true;
             }
-                expanded.add(s);
-                for (Action a : problem.getActions(s)) {
-                    BaseState targetState = problem.results(s, a);
-                    boolean adding = true;
-                    if (isGraphSearch)
-                        for (BaseState cs : expanded)
-                            if (cs.isEqual(targetState)) {
-                                adding = false;
-                                break;
-                            }
-                    for (BaseState nextState : queue)
-                        if (nextState.isEqual(targetState)) {
-                            if (s.currentCost + a.cost < nextState.currentCost)
-                                nextState.currentCost = s.currentCost + a.cost;
+            expanded.add(s);
+            for (Action a : problem.getActions(s)) {
+                BaseState targetState = problem.results(s, a);
+                boolean adding = true;
+                if (isGraphSearch)
+                    for (BaseState cs : expanded)
+                        if (cs.isEqual(targetState)) {
                             adding = false;
                             break;
                         }
-
-                    if (adding) {
-                        visited++;
-                        ArrayList<Action> previousActs = new ArrayList<>(s.actionSeq);
-                        previousActs.add(a);
-
-                        targetState.actionSeq = previousActs;
-                        targetState.currentCost += a.cost;
-                        queue.add(targetState);
+                for (BaseState nextState : queue)
+                    if (nextState.isEqual(targetState)) {
+                        if (s.currentCost + a.cost < nextState.currentCost)
+                            nextState.currentCost = s.currentCost + a.cost;
+                        adding = false;
+                        break;
                     }
+
+                if (adding) {
+                    visited++;
+                    ArrayList<Action> previousActs = new ArrayList<>(s.actionSeq);
+                    previousActs.add(a);
+
+                    targetState.actionSeq = previousActs;
+                    targetState.currentCost += a.cost;
+                    queue.add(targetState);
                 }
+            }
         }
         return false;
     }

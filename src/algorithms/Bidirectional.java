@@ -38,7 +38,6 @@ public class Bidirectional extends BaseAlgorithm {
             int memory = queue[0].size() + queue[1].size() + (isGraphSearch ? 0 : expandeds[0].size() + expandeds[1].size());
             maxMemory = Math.max(maxMemory, memory);
 
-            // TODO: Goal actions - 2 ?!
             for (BaseState check0 : expandeds[0])
                 for (BaseState check1 : expandeds[1])
                     if (check0.isEqual(check1)) {
