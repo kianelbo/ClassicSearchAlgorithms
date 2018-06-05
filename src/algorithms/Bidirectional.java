@@ -38,31 +38,29 @@ public class Bidirectional extends BaseAlgorithm {
             int memory = queue[0].size() + queue[1].size() + (isGraphSearch ? 0 : expandeds[0].size() + expandeds[1].size());
             maxMemory = Math.max(maxMemory, memory);
 
-            BaseState[] s = new BaseState[2];
-
+            // TODO: Goal actions - 2 ?!
             for (BaseState check0 : expandeds[0])
                 for (BaseState check1 : expandeds[1])
                     if (check0.isEqual(check1)) {
                         solution = check0.actionSeq;
-                        solution.add(0, new Action(-1, "from origin:"));
-                        solution.add(new Action(-1, "\n -> from goal:"));
                         Collections.reverse(check1.actionSeq);
                         solution.addAll(check1.actionSeq);
                         expanded.addAll(expandeds[0]);
                         expanded.addAll(expandeds[1]);
                         return true;
                     }
+
+            BaseState[] s = new BaseState[2];
             s[turn] = queue[turn].remove();
             expandeds[turn].add(s[turn]);
             for (Action a : problem.getActions(s[turn])) {
                 BaseState targetState = problem.results(s[turn], a);
                 boolean adding = true;
-                if (isGraphSearch)
-                    for (BaseState cs : expandeds[turn])
-                        if (cs.isEqual(targetState)) {
-                            adding = false;
-                            break;
-                        }
+                if (isGraphSearch) for (BaseState cs : expandeds[turn])
+                    if (cs.isEqual(targetState)) {
+                        adding = false;
+                        break;
+                    }
                 for (BaseState nextState : queue[turn])
                     if (nextState.isEqual(targetState)) {
                         adding = false;

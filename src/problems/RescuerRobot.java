@@ -3,24 +3,40 @@ package problems;
 import algorithms.Action;
 import algorithms.BaseState;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class RescuerRobot extends BaseProblem {
     private int N, M;
     private ArrayList<int[]> walls;
 
-    public RescuerRobot(int n, int m, ArrayList<int[]> wallsList) {
-        this.N = n;
-        this.M = m;
+    public RescuerRobot(String filename) {
+        Scanner input = null;
+        try {
+            input = new Scanner(new File(filename));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        N = input.nextInt();
+        M = input.nextInt();
+
         initialState = new MapState(0, 0);
 
-        // TODO: inputs for walls properly processed in parsing (-1 the indices!)
-
-        this.walls = wallsList;
+        int size = input.nextInt();
+        walls = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            int[] ia = new int[4];
+            ia[0] = input.nextInt() - 1;
+            ia[1] = input.nextInt() - 1;
+            ia[2] = input.nextInt() - 1;
+            ia[3] = input.nextInt() - 1;
+            walls.add(ia);
+        }
         int wallsCount = walls.size();
-        int[] w;
         for (int i = 0; i < wallsCount; i++) {
-            w = walls.get(i);
+            int[] w = walls.get(i);
             walls.add(new int[]{w[2], w[3], w[0], w[1]});
         }
     }

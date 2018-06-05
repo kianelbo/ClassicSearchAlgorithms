@@ -3,12 +3,29 @@ package problems;
 import algorithms.Action;
 import algorithms.BaseState;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class EightPuzzle extends BaseProblem {
 
-    public EightPuzzle(int[][] m) {
-        initialState = new PuzzleState(m);
+    public EightPuzzle(String filename) {
+        Scanner input = null;
+
+        int[][] matrix = new int[3][3];
+        try {
+            input = new Scanner(new File(filename));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        while (input.hasNext())
+            for (int i = 0; i < 3; i++)
+                for (int j = 0; j < 3; j++)
+                    matrix[i][j] = input.nextInt();
+
+        initialState = new PuzzleState(matrix);
     }
 
 
@@ -82,7 +99,6 @@ public class EightPuzzle extends BaseProblem {
 
         public PuzzleState(int[][] m) {
             this.matrix = m;
-
         }
 
         @Override
@@ -96,7 +112,8 @@ public class EightPuzzle extends BaseProblem {
         @Override
         public double getHeuristic() {
             int h = 0;
-            for (int i = 0; i < 3; i++) for (int j = 0; j < 3; j++)
+            for (int i = 0; i < 3; i++)
+                for (int j = 0; j < 3; j++)
                     h += Math.abs(this.matrix[i][j] / 3 - i) + Math.abs(this.matrix[i][j] % 3 - j);
             return h;
         }

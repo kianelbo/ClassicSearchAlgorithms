@@ -30,7 +30,7 @@ public class UCS extends BaseAlgorithm {
             if (problem.goalTest(s)) {
                 solution = s.actionSeq;
                 return true;
-            } else {
+            }
                 expanded.add(s);
                 for (Action a : problem.getActions(s)) {
                     BaseState targetState = problem.results(s, a);
@@ -58,9 +58,7 @@ public class UCS extends BaseAlgorithm {
                         targetState.currentCost += a.cost;
                         queue.add(targetState);
                     }
-
                 }
-            }
         }
         return false;
     }

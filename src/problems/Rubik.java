@@ -3,13 +3,24 @@ package problems;
 import algorithms.Action;
 import algorithms.BaseState;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
+//No heuristic or cost is required since we're not gonna perform AStar or UCS on this problem!
 public class Rubik extends BaseProblem {
     private ArrayList<Action> acts;
 
 
-    public Rubik(char[] colors) {
+    public Rubik(String filename) {
+        Scanner input = null;
+        try {
+            input = new Scanner(new File(filename));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        char[] colors = input.nextLine().replaceAll(" ", "").toCharArray();
         initialState = new RubikState(colors);
 
         acts = new ArrayList<>();
