@@ -17,7 +17,6 @@ public class Bidirectional extends BaseAlgorithm {
     @Override
     public boolean search(BaseProblem problem) {
         Queue<BaseState>[] queue = new LinkedList[2];
-//        expanded = new ArrayList<>();
         expandedCount = 0;
         ArrayList<BaseState>[] expandeds = new ArrayList[2];
 
