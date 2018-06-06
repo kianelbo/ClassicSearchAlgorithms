@@ -10,6 +10,10 @@ import java.util.Scanner;
 
 public class EightPuzzle extends BaseProblem {
 
+    public static final int[] dx = new int[]{0, 0, -1, 1};
+    public static final int[] dy = new int[]{-1, 1, 0, 0};
+    public static final String[] label = new String[]{"L", "R", "U", "D"};
+
     public EightPuzzle(String filename) {
         Scanner input = null;
 
@@ -34,14 +38,12 @@ public class EightPuzzle extends BaseProblem {
         ArrayList<Action> acts = new ArrayList<>();
 
         int[] xy = ((PuzzleState) s).getZero();
-        int i0 = xy[0], j0 = xy[1];
-        if (i0 == -1 || j0 == -1) return null;
+        int x = xy[0], y = xy[1];
+        if (x == -1 || y == -1) return acts;
 
-
-        if (j0 > 0) acts.add(new Action(0, "L", 1));
-        if (i0 > 0) acts.add(new Action(1, "U", 1));
-        if (j0 < 2) acts.add(new Action(2, "R", 1));
-        if (i0 < 2) acts.add(new Action(3, "D", 1));
+        for (int i = 0; i < 4; i++)
+            if (validPoint(x + dx[i], y + dy[i]))
+                acts.add(new Action(i, label[i], 1));
 
         return acts;
     }
@@ -50,33 +52,15 @@ public class EightPuzzle extends BaseProblem {
     public BaseState results(BaseState s, Action act) {
         int[][] oldMat = ((PuzzleState) s).matrix;
         int[][] newMat = new int[3][3];
-        for (int i = 0; i < 3; i++) for (int j = 0; j < 3; j++) newMat[i][j] = oldMat[i][j];
+        for (int i = 0; i < 3; i++)
+            System.arraycopy(oldMat[i], 0, newMat[i], 0, 3);
 
         int[] xy = ((PuzzleState) s).getZero();
-        int i0 = xy[0], j0 = xy[1];
+        int x = xy[0];
+        int y = xy[1];
 
-
-        switch (act.code) {
-            case 0: //Move Left
-                newMat[i0][j0] = oldMat[i0][j0 - 1];
-                newMat[i0][j0 - 1] = 0;
-                break;
-
-            case 1: //Move Up
-                newMat[i0][j0] = oldMat[i0 - 1][j0];
-                newMat[i0 - 1][j0] = 0;
-                break;
-
-            case 2: //Move Right
-                newMat[i0][j0] = oldMat[i0][j0 + 1];
-                newMat[i0][j0 + 1] = 0;
-                break;
-
-            default: //Move Down
-                newMat[i0][j0] = oldMat[i0 + 1][j0];
-                newMat[i0 + 1][j0] = 0;
-                break;
-        }
+        newMat[x][y] = newMat[x + dx[act.code]][y + dy[act.code]];
+        newMat[x + dx[act.code]][y + dy[act.code]] = 0;
 
         return new PuzzleState(newMat);
     }
@@ -91,6 +75,10 @@ public class EightPuzzle extends BaseProblem {
     @Override
     public BaseState getGoalState() {
         return new PuzzleState(new int[][]{{0, 1, 2}, {3, 4, 5}, {6, 7, 8}});
+    }
+
+    private boolean validPoint(int x, int y) {
+        return x >= 0 && x <= 2 && y >= 0 && y <= 2;
     }
 
 

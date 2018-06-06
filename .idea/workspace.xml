@@ -3,11 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="92f9eaa5-1e20-4dd2-bc7c-771385de49cb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/EightPuzzleInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/EightPuzzleInput.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/RubikInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/RubikInput.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/algorithms/BFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/algorithms/BFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/algorithms/BaseAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/algorithms/BaseAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/algorithms/Bidirectional.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/algorithms/Bidirectional.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/algorithms/DFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/algorithms/DFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/problems/EightPuzzle$PuzzleState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/problems/EightPuzzle$PuzzleState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/problems/EightPuzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/problems/EightPuzzle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/problems/Rubik$RubikState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/problems/Rubik$RubikState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/problems/Rubik.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/out/production/ClassicSearchAlgorithms/problems/Rubik.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/AStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/AStar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BaseAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BaseAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/Bidirectional.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/Bidirectional.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/DFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/UCS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/UCS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/EightPuzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/EightPuzzle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/RescuerRobot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/RescuerRobot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/Rubik.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/Rubik.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +36,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="495">
               <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -31,47 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bidirectional.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/Bidirectional.java">
+      <file leaf-file-name="BaseAlgorithm.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BaseAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AStar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/AStar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UCS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/UCS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DFS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/DFS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BFS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BFS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="62" selection-end-line="71" />
+            <state relative-caret-position="345">
+              <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -100,7 +78,23 @@
         <option value="$PROJECT_DIR$/src/algorithms/UCS.java" />
         <option value="$PROJECT_DIR$/src/algorithms/AStar.java" />
         <option value="$PROJECT_DIR$/src/algorithms/DFS.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/Bidirectional.java" />
+        <option value="$PROJECT_DIR$/EightPuzzleInput.txt" />
+        <option value="$PROJECT_DIR$/src/problems/EightPuzzle.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/BaseState.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/UCS.java" />
+        <option value="$PROJECT_DIR$/src/problems/RescuerRobot.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/BaseAlgorithm.java" />
+        <option value="$PROJECT_DIR$/RubikInput.txt" />
+        <option value="$PROJECT_DIR$/src/problems/Rubik.java" />
+        <option value="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/Rubik.java" />
+        <option value="$PROJECT_DIR$/../ClassicSearchAlgorithms/RubikInput.txt" />
+        <option value="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/AStar.java" />
+        <option value="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BFS.java" />
+        <option value="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/UCS.java" />
+        <option value="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/DFS.java" />
         <option value="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/Bidirectional.java" />
+        <option value="$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BaseAlgorithm.java" />
       </list>
     </option>
   </component>
@@ -124,8 +118,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,12 +146,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/..//////LocalSearchAlgorithms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/..//////////LocalSearchAlgorithms" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -252,17 +246,22 @@
       <workItem from="1528184655471" duration="7939000" />
       <workItem from="1528196647107" duration="2215000" />
       <workItem from="1528200216530" duration="36000" />
+      <workItem from="1528201031989" duration="8000" />
+      <workItem from="1528290541738" duration="56000" />
+      <workItem from="1528296928486" duration="8153000" />
+      <workItem from="1528307124992" duration="5100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15355000" />
+    <option name="totallyTimeSpent" value="28672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -274,7 +273,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24346076" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23809524" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -287,8 +286,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32859176" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,134 +296,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/Bidirectional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/AStar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/DFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="62" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/UCS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/Bidirectional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="54" lean-forward="true" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/AStar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/EightPuzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/DFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/UCS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/RescuerRobot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/EightPuzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/Bidirectional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -529,16 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../SearchAlgorithms-master/src/algorithm/AStar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -553,36 +413,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BaseAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" column="65" lean-forward="true" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../SearchAlgorithms-master/src/algorithm/UCS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-495" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/EightPuzzleInput.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/RescuerRobotInput.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/RescuerRobot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -600,59 +439,205 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/BaseProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.398/BaseProblem.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.008/RescuerRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-965" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.918/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.361/EightPuzzle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1665">
+          <caret line="127" column="34" lean-forward="true" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.501/BFS.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.789/Bidirectional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-605" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.923/DFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.620/UCS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-455" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.037/EightPuzzle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="75" column="39" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="75" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BaseState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="62" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/DFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/EightPuzzle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+        <state relative-caret-position="510">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/RescuerRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="108" column="60" selection-start-line="108" selection-start-column="60" selection-end-line="108" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArtificialIntelligence-SearchAlgorithms-master/ClassicalSearchAlgorithm/ClassicalSearchAlgorithm/src/Algorithms/UniformCostSearch/UCS_Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.560/EightPuzzle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.317/BFS.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.087/UCS.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.846/BFS.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/EightPuzzleInput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/AStar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="625">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+          <folding>
+            <element signature="e#2435#2436#0" expanded="true" />
+            <element signature="e#2459#2460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+          <folding>
+            <element signature="e#2021#2022#0" expanded="true" />
+            <element signature="e#2045#2046#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/UCS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        <state relative-caret-position="625">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+          <folding>
+            <element signature="e#2342#2343#0" expanded="true" />
+            <element signature="e#2366#2367#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/problems/Rubik.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="94" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
+        <state relative-caret-position="300">
+          <caret line="87" column="44" lean-forward="true" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
+          <folding>
+            <element signature="e#5888#5889#0" expanded="true" />
+            <element signature="e#5920#5921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/DFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="91" column="28" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+          <folding>
+            <element signature="e#2436#2437#0" expanded="true" />
+            <element signature="e#2460#2461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/Bidirectional.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="520">
+          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+          <folding>
+            <element signature="e#2965#2966#0" expanded="true" />
+            <element signature="e#2989#2990#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/RubikInput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" lean-forward="true" selection-start-column="32" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ClassicSearchAlgorithms/src/algorithms/BaseAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
         </state>
       </provider>
     </entry>

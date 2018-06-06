@@ -7,13 +7,15 @@ import java.util.Stack;
 
 public class DFS extends BaseAlgorithm {
     private boolean isIDS = false;
-    private int limit;
+    private int limit, expandedCount;
 
     public DFS(boolean isGraphSearch, int l) {
         this.isGraphSearch = isGraphSearch;
         if (limit == 0) {
             isIDS = true;
             limit = 1;
+            visited = 0;
+            expandedCount = 0;
         } else this.limit = l;
     }
 
@@ -36,15 +38,16 @@ public class DFS extends BaseAlgorithm {
         initialState.actionSeq = new ArrayList<>();
 
         stack.add(initialState);
-        visited = 1;
+        visited++;
 
         while (!stack.empty()) {
-            int memory = stack.size() + (isGraphSearch ? 0 : expanded.size());
+            int memory = stack.size() + (!isGraphSearch ? 0 : expanded.size());
             maxMemory = Math.max(maxMemory, memory);
 
             BaseState s = stack.pop();
             if (problem.goalTest(s)) {
                 solution = s.actionSeq;
+                expandedCount += expanded.size();
                 return true;
             }
             expanded.add(s);
@@ -82,5 +85,10 @@ public class DFS extends BaseAlgorithm {
     @Override
     int getTotalCost() {
         return 0;
+    }
+
+    @Override
+    int getExpandedNumbers() {
+        return expandedCount;
     }
 }

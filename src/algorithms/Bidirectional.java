@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Bidirectional extends BaseAlgorithm {
+    private int expandedCount;
 
     public Bidirectional(boolean isGraphSearch) {
         this.isGraphSearch = isGraphSearch;
@@ -16,7 +17,8 @@ public class Bidirectional extends BaseAlgorithm {
     @Override
     public boolean search(BaseProblem problem) {
         Queue<BaseState>[] queue = new LinkedList[2];
-        expanded = new ArrayList<>();
+//        expanded = new ArrayList<>();
+        expandedCount = 0;
         ArrayList<BaseState>[] expandeds = new ArrayList[2];
 
         for (int i = 0; i < 2; i++) {
@@ -35,7 +37,7 @@ public class Bidirectional extends BaseAlgorithm {
 
         int turn = 0;
         while (!queue[0].isEmpty() && !queue[1].isEmpty()) {
-            int memory = queue[0].size() + queue[1].size() + (isGraphSearch ? 0 : expandeds[0].size() + expandeds[1].size());
+            int memory = queue[0].size() + queue[1].size() + (!isGraphSearch ? 0 : expandeds[0].size() + expandeds[1].size());
             maxMemory = Math.max(maxMemory, memory);
 
             for (BaseState check0 : expandeds[0])
@@ -44,8 +46,7 @@ public class Bidirectional extends BaseAlgorithm {
                         solution = check0.actionSeq;
                         Collections.reverse(check1.actionSeq);
                         solution.addAll(check1.actionSeq);
-                        expanded.addAll(expandeds[0]);
-                        expanded.addAll(expandeds[1]);
+                        expandedCount = expandeds[0].size() + expandeds[1].size();
                         return true;
                     }
 
@@ -83,5 +84,10 @@ public class Bidirectional extends BaseAlgorithm {
     @Override
     int getTotalCost() {
         return 0;
+    }
+
+    @Override
+    int getExpandedNumbers() {
+        return expandedCount;
     }
 }

@@ -23,7 +23,7 @@ public class AStar extends BaseAlgorithm {
         visited = 1;
 
         while (!queue.isEmpty()) {
-            int memory = queue.size() + (isGraphSearch ? 0 : expanded.size());
+            int memory = queue.size() + (!isGraphSearch ? 0 : expanded.size());
             maxMemory = Math.max(maxMemory, memory);
 
             BaseState s = queue.remove();
@@ -71,5 +71,10 @@ public class AStar extends BaseAlgorithm {
         for (Action a : solution)
             finalCost += a.cost;
         return finalCost;
+    }
+
+    @Override
+    int getExpandedNumbers() {
+        return expanded.size();
     }
 }

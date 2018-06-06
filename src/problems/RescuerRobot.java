@@ -106,7 +106,7 @@ public class RescuerRobot extends BaseProblem {
 
         @Override
         public double getHeuristic() {
-            return Math.sqrt((x - N)*(x - N) + (y - M)*(y - M));
+            return Math.sqrt((x - N) * (x - N) + (y - M) * (y - M));
         }
     }
 }

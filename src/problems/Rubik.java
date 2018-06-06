@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//No heuristic or cost is required since we're not gonna perform AStar or UCS on this problem!
+//Heuristic, cost and goal state not implemented since we're not gonna perform AStar, UCS or Bidirectional on this problem!
 public class Rubik extends BaseProblem {
     private ArrayList<Action> acts;
 
@@ -41,7 +41,8 @@ public class Rubik extends BaseProblem {
     @Override
     public BaseState results(BaseState s, Action act) {
         char[] curColors = ((RubikState) s).colors;
-        char[] newColors = curColors.clone();
+        char[] newColors = new char[24];
+        System.arraycopy(curColors, 0, newColors, 0, 24);
 
         switch (act.code) {
             case 0: //Top
@@ -51,7 +52,7 @@ public class Rubik extends BaseProblem {
                 newColors[17] = curColors[5];
                 newColors[14] = curColors[17];
                 newColors[15] = curColors[16];
-                newColors[20] = curColors[16];
+                newColors[20] = curColors[15];
                 newColors[21] = curColors[14];
                 newColors[0] = curColors[2];
                 newColors[1] = curColors[0];
@@ -65,7 +66,7 @@ public class Rubik extends BaseProblem {
                 newColors[5] = curColors[17];
                 newColors[17] = curColors[14];
                 newColors[16] = curColors[15];
-                newColors[16] = curColors[20];
+                newColors[15] = curColors[20];
                 newColors[14] = curColors[21];
                 newColors[2] = curColors[0];
                 newColors[0] = curColors[1];

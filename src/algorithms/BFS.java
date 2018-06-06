@@ -25,7 +25,7 @@ public class BFS extends BaseAlgorithm {
         visited = 1;
 
         while (!queue.isEmpty()) {
-            int memory = queue.size() + (isGraphSearch ? 0 : expanded.size());
+            int memory = queue.size() + (!isGraphSearch ? 0 : expanded.size());
             maxMemory = Math.max(maxMemory, memory);
 
             BaseState s = queue.remove();
@@ -60,12 +60,16 @@ public class BFS extends BaseAlgorithm {
 
             }
         }
-
         return false;
     }
 
     @Override
     int getTotalCost() {
         return 0;
+    }
+
+    @Override
+    int getExpandedNumbers() {
+        return expanded.size();
     }
 }
